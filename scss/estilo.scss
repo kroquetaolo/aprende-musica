@@ -1,0 +1,231 @@
+@import "__colores.scss";
+@import "__font.scss";
+@import "__operaciones.scss";
+html {
+    background-image: url(../img/pexels-ricardo-esquivel-1662159.jpg);
+    background-size: cover;
+    background-color: $fondo;
+    background-blend-mode: screen;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.navlogo {
+    width: 4rem;
+}
+
+.clases {
+    padding-top: 3rem;
+}
+
+.clases__titulo {
+    font-size: $font__titulo;
+}
+
+.clases__subtitulo {
+    font-size: $font__subtitulo;
+}
+
+.clases__texto {
+    font-size: $font__texto;
+}
+
+.clases__contenido {
+    padding-top: 5%;
+}
+
+.niveles {
+    padding-top: 3rem;
+}
+
+.carousel__background {
+    background-color: $fondo__carousel;
+}
+
+.encabezado {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    text-align: center;
+    color: white;
+}
+
+.encabezado__background {
+    background-image: url("../img/fender-colores.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.encabezado__subheading {
+    font-size: $font__texto;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    font-family: $font__subheading;
+}
+
+.encabezado__heading {
+    font-size: $font__titulo;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    font-family: $font__heading;
+}
+
+@media (min-width: 768px) {
+    .encabezado {
+        padding-top: 17rem;
+        padding-bottom: 12.5rem;
+    }
+    .encabezado__subheading {
+        font-size: $font__texto;
+        line-height: 2.25rem;
+        margin-bottom: 2rem;
+    }
+    .encabezado__heading {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.modal__image {
+    position: relative;
+}
+
+.modal__overflow {
+    overflow: hidden;
+}
+
+.modal__image:hover {
+    opacity: 0.8;
+    transition: 1s ease;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.modal__image--text {
+    display: none;
+    position: absolute;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    bottom: 25px;
+    left: 24px;
+}
+
+.modal__image:hover+.modal__image--text {
+    display: block;
+}
+
+.canto {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.canto__blanco {
+    background-color: rgb(250, 250, 250);
+    padding-bottom: 20px;
+    color: black;
+    @include border(solid,
+    2px,
+    black);
+}
+
+.canto__negro {
+    background-color: black;
+    padding-bottom: 20px;
+    color: white;
+    @include border(solid,
+    2px,
+    black);
+}
+
+.pie {
+    background-color: black;
+    padding: 1.2rem 0 1.2rem;
+}
+
+.pie__copyright {
+    color: white;
+}
+
+.pie__redes {
+    display: flex;
+    justify-content: center;
+}
+
+.conocenos {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: transparent;
+}
+
+.conocenos__texto {
+    font-size: $font__texto;
+    margin-top: 15%;
+}
+
+@media (max-width: 768px) {
+    .conocenos__imagen--principal {
+        width: 305px;
+        height: 305px;
+        border: $borde__fino;
+    }
+    .conocenos__imagen--secundaria {
+        border: $borde__fino;
+        width: 140px;
+        height: 140px;
+        margin-top: 170px;
+        margin-left: 170px;
+    }
+}
+
+.academia__seccion {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.academia__seccion--izquierda {
+    display: flex;
+    align-content: left;
+}
+
+.academia {
+    padding-top: 20px;
+    background-color: $fondo__academia;
+}
+
+.academia__imagen {
+    border: 7px solid black;
+    border-radius: 50% 50%;
+}
+
+.personal {
+    padding-top: 3rem;
+    background-color: $fondo__academia;
+}
+
+.personal__nombre {
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.personal__descripcion {
+    font-weight: bold;
+}
+
+.personal__foto img {
+    width: 60%;
+    height: 60%;
+    margin-left: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid black;
+}

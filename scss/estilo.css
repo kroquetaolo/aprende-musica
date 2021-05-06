@@ -1,0 +1,300 @@
+.media__twitter {
+  background-color: #00f7ff;
+}
+
+.media__facebook {
+  background-color: #002fff;
+}
+
+.media__linkedin {
+  background-color: #3046c2;
+}
+
+.canto__blanco__imagen {
+  border: solid 2px black;
+}
+
+.canto__negro__imagen {
+  border: solid 2px white;
+}
+
+.conocenos__imagen--principal, .conocenos__imagen--secundaria {
+  width: 610px;
+  height: 610px;
+  background-image: url(../img/vinyl-336626_1920.jpg);
+  background-position: 50% 50%;
+  -webkit-box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  border: 14px solid #5abef4;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.conocenos__imagen--secundaria {
+  width: 279px;
+  height: 279px;
+  margin-top: 380px;
+  margin-left: 380px;
+}
+
+.personal__red {
+  color: red;
+}
+
+.personal__blue {
+  color: blue;
+}
+
+.personal__green {
+  color: green;
+}
+
+.profesor__basico {
+  border: solid 2px #b3ff00;
+  border-radius: 10%;
+}
+
+.profesor__medio {
+  border: solid 2px #ff7b00;
+  border-radius: 10%;
+}
+
+.profesor__avanzado {
+  border: solid 2px maroon;
+  border-radius: 10%;
+}
+
+html {
+  background-image: url(../img/pexels-ricardo-esquivel-1662159.jpg);
+  background-size: cover;
+  background-color: rgba(182, 192, 252, 0.548);
+  background-blend-mode: screen;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.navlogo {
+  width: 4rem;
+}
+
+.clases {
+  padding-top: 3rem;
+}
+
+.clases__titulo {
+  font-size: 2.5rem;
+}
+
+.clases__subtitulo {
+  font-size: 2rem;
+}
+
+.clases__texto {
+  font-size: 1.6rem;
+}
+
+.clases__contenido {
+  padding-top: 5%;
+}
+
+.niveles {
+  padding-top: 3rem;
+}
+
+.carousel__background {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.encabezado {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  text-align: center;
+  color: white;
+}
+
+.encabezado__background {
+  background-image: url("../img/fender-colores.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.encabezado__subheading {
+  font-size: 1.6rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.encabezado__heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 768px) {
+  .encabezado {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+  .encabezado__subheading {
+    font-size: 1.6rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  .encabezado__heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.modal__image {
+  position: relative;
+}
+
+.modal__overflow {
+  overflow: hidden;
+}
+
+.modal__image:hover {
+  opacity: 0.8;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.modal__image--text {
+  display: none;
+  position: absolute;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  bottom: 25px;
+  left: 24px;
+}
+
+.modal__image:hover + .modal__image--text {
+  display: block;
+}
+
+.canto {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.canto__blanco {
+  background-color: #fafafa;
+  padding-bottom: 20px;
+  color: black;
+  border: solid 2px black;
+}
+
+.canto__negro {
+  background-color: black;
+  padding-bottom: 20px;
+  color: white;
+  border: solid 2px black;
+}
+
+.pie {
+  background-color: black;
+  padding: 1.2rem 0 1.2rem;
+}
+
+.pie__copyright {
+  color: white;
+}
+
+.pie__redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conocenos {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: transparent;
+}
+
+.conocenos__texto {
+  font-size: 1.6rem;
+  margin-top: 15%;
+}
+
+@media (max-width: 768px) {
+  .conocenos__imagen--principal, .conocenos__imagen--secundaria {
+    width: 305px;
+    height: 305px;
+    border: 7px solid #5abef4;
+  }
+  .conocenos__imagen--secundaria {
+    border: 7px solid #5abef4;
+    width: 140px;
+    height: 140px;
+    margin-top: 170px;
+    margin-left: 170px;
+  }
+}
+
+.academia__seccion {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.academia__seccion--izquierda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: left;
+      align-content: left;
+}
+
+.academia {
+  padding-top: 20px;
+  background-color: rgba(0, 0, 255, 0.05);
+}
+
+.academia__imagen {
+  border: 7px solid black;
+  border-radius: 50% 50%;
+}
+
+.personal {
+  padding-top: 3rem;
+  background-color: rgba(0, 0, 255, 0.05);
+}
+
+.personal__nombre {
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.personal__descripcion {
+  font-weight: bold;
+}
+
+.personal__foto img {
+  width: 60%;
+  height: 60%;
+  margin-left: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid black;
+}
+/*# sourceMappingURL=estilo.css.map */
