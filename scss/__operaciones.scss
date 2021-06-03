@@ -22,8 +22,8 @@ $color in $social-media {
 
 // aplicando extend
 .conocenos__imagen--principal {
-    width: 610px;
-    height: 610px;
+    width: 480px;
+    height: 480px;
     background-image: url(../img/vinyl-336626_1920.jpg);
     background-position: 50% 50%;
     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.4);
@@ -35,26 +35,8 @@ $color in $social-media {
 
 .conocenos__imagen--secundaria {
     @extend .conocenos__imagen--principal;
-    width: 279px;
-    height: 279px;
-    margin-top: 380px;
-    margin-left: 380px;
-}
-
-// each
-$list: red blue green;
-@each $i in $list {
-    .personal__#{$i} {
-        color: #{$i};
-    }
-}
-
-// mapa
-$profesores: ( basico: #b3ff00, medio: rgb(255, 123, 0), avanzado: rgb(128, 0, 0));
-@each $profesor,
-$color in $profesores {
-    .profesor__#{$profesor} {
-        border: solid 2px $color;
-        border-radius: 10%;
-    }
+    width: 220px;
+    height: 220px;
+    margin-top: 300px;
+    margin-left: 300px;
 }
